@@ -1,0 +1,5 @@
+AudioSource audioSource; - переменная звука компонента Аудио
+[SerializeField] AudioClip flySound; - переменная для вставки аудио дорожки в поле в инспекторе 
+audioSource = GetComponent<AudioSource>(); - в "start()" прописать для применения аудио
+audioSource.Pause(); - применение паузы аудио
+audioSource.PlayOneShot(boom); - применить адуио трек при событии объекта
