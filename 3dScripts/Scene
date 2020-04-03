@@ -1,0 +1,4 @@
+using UnityEngine.SceneManagement; - библиотека управления сцен
+SceneManager.LoadScene(1); - метод загрузки сцены
+int currentLevelIndex = SceneManager.GetActiveScene().buildIndex; - получить текущий номер сцены
+SceneManager.sceneCountInBuildSettings - количество сцен
