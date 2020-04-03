@@ -1,0 +1,6 @@
+Rigidbody rb; - переменная - симуляция физики компонента
+if (Input.GetKey(KeyCode.Space)){ действие }  - условие "если", при нажатии на "Space" будет выполняться действие  
+rb.AddRelativeForce(Vector3.up*flySpeed * Time.deltaTime); - обращаемся к компоненту "rb" и добавляем ему силу в ту сторону, куда смотрит обект(вверх)
+rb = GetComponent<Rigidbody>(); - присвоение "rb" к компоненту "Rigidbody"
+Vector3 - тип переменной направления в трезхмерном мире
+Vector3.up - тип переменной "up" указывается по "y" т.е. вверх
