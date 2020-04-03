@@ -1,0 +1,17 @@
+[SerializeField] float rotSpeed = 100f; - переменная скорости вращения
+
+
+void Rotation(){
+        float rotationSpeed  = rotSpeed * Time.deltaTime; - переменная скорости вращения, вне зависимости от FPS
+
+        rb.freezeRotation = true; 
+        if(Input.GetKey(KeyCode.A)){
+            transform.Rotate(Vector3.forward * rotationSpeed); - Vector3.forward - направление вращения по оси Z координат
+        }
+        else if(Input.GetKey(KeyCode.D)){
+            transform.Rotate(-Vector3.forward * rotationSpeed); - transforme пункт в инспекторе, Rotate - команда вращать 
+            //-Vector3.forward - равносильно backward 
+        }
+        rb.freezeRotation = false;          
+    }
+    
